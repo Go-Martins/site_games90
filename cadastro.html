@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/styleCadastro.css"/>
+        <title>login</title>
+    </head>
+
+    <body>
+        <section class="container">
+            <header class="cabecalho">
+                <nav class="cabecalho__marca">
+                    <a href="index.html">
+                        <img class="cabecalho__marca__logo" src="assets/Kratos(100px).png" alt="Logo do site">
+                        <h1 class="cabecalho__marca__nome">Esparta Games</h1>
+                    </a>
+                </nav>
+
+                <nav class="cabecalho__menu__flutuante__links">
+                    <a class="menu__flutuante__links__links" href="#">Notícias</a>
+                    <a class="menu__flutuante__links__links" href="#">Lançamentos</a>
+                    <a class="menu__flutuante__links__links" href="#">Reviews dos jogos</a>
+                    <a class="menu__flutuante__links__links" href="#">Promoções</a>                        <a class="menu__flutuante__links__links" href="#">Nossa loja</a>
+                </nav>
+
+                <div class="cabecalho__menu__hamburguer">
+                    <div class="menu__hamburguer_link">
+                        <div class="menu__hamburguer__icone" onclick=""></div>
+                    </div>
+                </div>
+
+                <nav class="botao__login">
+                    <a href="login.html">Voltar</a>
+                </nav>
+            </header>
+        </section>
+
+        <main>
+            <section class="container__cadastro">
+                <div class="container__cadastro__formulario">
+                    <p class="cadastro__formulario__titulo">Preencha os campos abaixo</p>
+                    <form class="formulario" action="#" method="post">
+                        <div class="formulario__forms">
+                            <input class="forms__campo" type="text" id="nome" placeholder="Primeiro nome"/>
+                        </div>
+
+                        <div class="formulario__forms">
+                            <input class="forms__campo" type="text" id="sobrenome" placeholder="Sobrenome"/>
+                        </div>
+
+                        <div class="formulario__forms">
+                            <input class="forms__campo" type="email" id="email" placeholder="Seu melhor e-email"/>
+                        </div>
+
+                        <div class="formulario__forms">
+                            <input class="forms__campo" type="password" autocomplete="current-password" id="senha" minlength="8" maxlength="10" size="10" required placeholder="Senha (min 8 e max 10 caracteres)"/>
+                        </div>
+
+                        <div class="formulario__button">
+                            <button class="button__button" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <div class="rodape__tela">
+            <footer class="rodape">
+                <section class="rodape_caixa">
+                    <nav class="rodape__marca">
+                        <a href="index.html"><img class="rodape__marca__logo" src="assets/Kratos(100px).png" alt="Logo do site"></a>
+                        <a class="rodape__marca__icones__redes" href="LinkedIn"> <img src="assets/Icone LinkedIn.png" alt="Icone do LinkedIn"></a>
+                        <a class="rodape__marca__icones__redes" href="Facebook"><img src="assets/Icone facebook.png" alt="Icone do facebook"></a>
+                        <a class="rodape__marca__icones__redes" href="Instagram"><img src="assets/Icone Instagram.png" alt="Icone do Instagram"></a>
+                    </nav>
+                </section>
+                    <div class="desenvolvedor">
+                        <p>Desenvolvido por: Gabriel O. Martins</p>
+                    </div>
+            </footer>
+        </div>
+    </body>
+</html>

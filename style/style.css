@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-cabecalho: rgb(250, 249, 246, 0.8);
+    --cor-texto-cabecalho: #BE3144;
+    --cor-fundo: #151515;
+    --cor-texto: #ffffff;
+    --cor-rodape: #BE3144;
+    --cor-texto-hover: #151515;
+    --fonte-marca: "Cinzel Decorative", serif;
+    --fonte-marca-tamanho: 2.5rem;
+    --fonte-marca-tamanho-mobile: 1.8rem;
+    --fonte-padrao: "Urbanist", sans-serif;
+    --fonte-titulo: 2.3em;
+    --fonte-subtitulo: 1.5rem;
+    --fonte-materia: 1.2rem;
+    --fonte-menu: 1rem;
+    --botao-largura: 5em;
+    --botao-padding-vertical: 1.5rem;
+    --botao-borda: 2px solid #000000;
+    --botao-radius: 10px;
+    --botao-transicao: background-color 0.3s, color 0.3s;
+    --gap-menu: 2em;
+    --gap-padrao: 1.5em;
+    --margin-lista: 0;
+    --padding-padrao: 2% 4%;
+    --padding-cabecalho: 0.2% 2%;
+    --padding-materia: 2% 4%;
+    --padding-rodape: 0 1.5em;
+    --padding-aba-jogos: 2% 4%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-padrao);
+    min-height: 100vh;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    height: auto;
+    color: var(--cor-texto-cabecalho);
+    padding: var(--padding-cabecalho);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__marca a {
+    text-decoration: none;
+    color: var(--cor-texto-cabecalho);
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-size: var(--fonte-marca-tamanho);
+    font-family: var(--fonte-marca);
+}
+
+.cabecalho__marca__nome {
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho__menu__flutuante__links {
+    margin: 2em 3em 0 3em;
+}
+
+.menu__flutuante__links__links {
+    padding: 0;
+    margin: 0.5em 0.8em;
+    text-decoration: none;
+    font-size: var(--fonte-materia);
+    color: var(--cor-texto-cabecalho);
+    font-weight: 500;
+    font-family: var(--fonte-padrao);
+}
+
+.menu__flutuante__links__links:hover {
+    font-size: 23px;
+    font-weight: 600;
+    transition: 0.3s;    
+}
+
+.botao__login {
+    border: 2px solid #000000;
+    border-radius: 12px;
+    padding: 0.7em;
+}
+
+.botao__login a{
+    text-decoration: none;
+    font-family: var(--fonte-marca);
+    font-weight: 600;
+    color: var(--cor-texto-cabecalho);
+}
+
+.botao__login:hover {
+    background-color: var(--cor-texto-cabecalho);
+    transition: 0.2s;  
+}
+
+.botao__login:hover a {
+    color: #000000;
+}
+
+.apresentacao {
+    padding: var(--padding-padrao);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-padrao);
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    justify-content: center;
+    color: var(--cor-texto);
+}
+
+.apresentacao__conteudo {
+    padding: var(--padding-materia);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: var(--fonte-titulo);
+}
+
+.apresentacao__conteudo__introducao {
+    font-size: var(--fonte-materia);
+    padding: 0%;
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-size: var(--fonte-subtitulo);
+    padding: 0;
+}
+
+.materia {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-padrao);
+    padding: var(--padding-materia);
+    justify-content: center;
+    text-align: justify;
+    font-size: var(--fonte-materia);
+    color: var(--cor-texto);
+}
+
+.materia__video {
+    margin: auto;
+}
+
+.materia__video__conteudo {
+    margin: auto;
+}
+
+.materia__imagens {
+    width: 35vw;
+    justify-content: center;
+    padding: 0 1% 0 5%;
+}
+
+.materia__subtitulo__jogos {
+    font-size: var(--fonte-subtitulo);
+    margin: 0%;
+}
+
+/* Estilos para a lista */
+ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+/* Estilos para os itens da lista */
+ul li {
+    margin-bottom:var(--margin-lista);
+}
+
+.materia__imagem__jogos {
+    display: flex;
+    justify-content: center;
+}
+
+.materia__jogos__link {
+    padding: 1em;
+
+}
+
+.materia__jogos__link__caixas {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin:0 2em 0 2em;
+    gap: 2em;
+}
+
+.materia__jogos__link__caixas__imagens {
+    width: 20vw;
+}
+
+.materia__jogos__link__caixas__link {
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto);
+    text-align:center;
+    width: 20vw;
+}
+
+.rodape {
+    background-color: var(--cor-rodape);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-rodape);
+    font-family: var(--fonte-padrao);
+    align-items: center;
+    font-size: var(--fonte-materia);
+    flex-direction: row;
+    text-align: center;
+    color: #ACA9BB;
+}
+
+
+
+.rodape__marca__logo {
+    width: 3.7em;
+    display: none;
+}
+
+@media screen and (max-width:1360px) {
+    .cabecalho__marca {
+        margin-right: 1em;
+    }
+    
+    .cabecalho__menu__flutuante__links {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 2em;
+    }
+
+    .menu__flutuante__links__links{
+        padding: 0;
+        margin: 0.5em 0.8em;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .cabecalho__marca__nome {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho__marca a {
+        gap: 0;
+    }
+
+    .cabecalho {
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    .cabecalho__marca a {
+        text-decoration: none;
+        color: var(--cor-texto-cabecalho);
+        font-family: var(--fonte-marca);
+    }
+
+    .cabecalho__menu__flutuante__links {
+        display: none;
+    }
+
+    .menu__hamburguer_link {
+        margin: 0 0.5em 0 2em;
+    }
+
+    .menu__hamburguer__icone {
+        width: 40px;
+        height: 40px;
+        background-image: url('../assets/menu-hamburguer.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .menu__hamburguer__icone:hover {
+        width: 45px;
+    }
+
+    .botoes__direita__cabecalho {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+        margin: 0.7em 0;
+    }
+
+    .menu__hamburguer__icone{
+        margin-bottom: 1em;
+    }
+
+    .materia {
+        gap: 0.6em;
+    }
+
+    .materia__imagens {
+        width: 50vw;
+    }
+
+    .materia__imagem__jogos {
+        padding: 2em 0;
+    }
+
+    .materia__jogos__link__caixas {
+        flex-direction: column;
+    }
+
+    .materia__jogos__link__caixas__imagens {
+        width: 60vw;
+    }
+
+    .materia__jogos__link__caixas__link {
+        width: 60vw;
+    }
+
+    .materia__video__conteudo {
+        width: auto;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .rodape__marca{
+        margin-top: 0.5em;
+    }
+
+    .rodape__marca__logo {
+        display: none;
+    }
+}

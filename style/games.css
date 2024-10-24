@@ -1,0 +1,56 @@
+@import url(style.css);
+
+/* PAGINAS DOS JOGOS */
+.apresentacao__page__jogos {
+    padding: var(--padding-aba-jogos);
+    display: flex;
+    gap: var(--gap-padrao);
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    justify-content: center;
+    align-items:flex-start;
+    color: var(--cor-texto);  
+    gap: 3%;  
+}
+
+.apresentacao__page__jogos__conteudo {
+    padding: 2% 2%;
+}
+
+.apresentacao__page__jogos__conteudo__subtitulo__jogos {
+    font-size: var(--fonte-subtitulo);
+    padding-top: 5%;
+}
+
+
+.apresentacao__page__jogos__imagens__jogo {
+    width: 500px;
+    padding: 6% 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .apresentacao__page__jogos {
+        flex-direction: column;
+    }
+
+    .apresentacao__page__jogos__imagens {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .apresentacao__page__jogos__imagens__video{
+        width: 80vw;
+        
+    }
+
+    .apresentacao__page__jogos__imagens__jogo {
+        width: 80vw;
+    }
+
+    .materia__imagens__mario__video {
+        width: auto;
+    }
+
+
+}
