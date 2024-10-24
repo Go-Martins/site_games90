@@ -9,11 +9,11 @@
     --cor-texto-hover: #151515;
 
     --fonte-marca: "Cinzel Decorative", serif;
-    --fonte-marca-tamanho: 2.5rem;
+    --fonte-marca-tamanho: 2.5vw;
     --fonte-padrao: "Urbanist", sans-serif;
-    --fonte-titulo: 2rem;
+    --fonte-titulo: 1.5em;
     --fonte-subtitulo: 1.5rem;
-    --fonte-materia: 1.2rem;
+    --fonte-materia: 1.2vw;
     --fonte-menu: 1rem;
     --botao-largura: 4.8em;
     --botao-padding-vertical: 1.3em;
@@ -104,6 +104,7 @@ body {
     font-family: var(--fonte-marca);
     font-weight: 600;
     color: var(--cor-texto-cabecalho);
+    font-size: 1.2vw;
 }
 
 .botao__login:hover {
@@ -146,6 +147,7 @@ body {
 
 .forms__campo {
     width: 19em;
+    margin-bottom: 1em;
 }
 
 .formulario__button {
@@ -166,7 +168,7 @@ body {
     justify-content: center;
     text-decoration: none;
     border: var(--botao-borda);
-    padding: 0.9em;
+    padding: 0.8em;
     width: 19em;
     width: 50%;
     border-radius: 10px;
@@ -215,11 +217,15 @@ input{
     .cabecalho__marca {
         margin-right: 1em;
     }
+
+    .cabecalho__marca__nome {
+        font-size: 2.5vw;
+    }
     
     .cabecalho__menu__flutuante__links {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 5em;
+        margin: 2em 3em 0 3em;
     }
 
     .menu__flutuante__links__links{
@@ -229,13 +235,13 @@ input{
 
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1000px) {
     .cabecalho__marca__nome {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .cabecalho {
-        padding: 0.5em;
+        padding: 0 0.5em;
         margin: 0;
     }
 

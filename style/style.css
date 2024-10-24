@@ -8,12 +8,13 @@
     --cor-rodape: #BE3144;
     --cor-texto-hover: #151515;
     --fonte-marca: "Cinzel Decorative", serif;
-    --fonte-marca-tamanho: 2.5rem;
+    --fonte-marca-tamanho: 2.5vw;
     --fonte-marca-tamanho-mobile: 1.8rem;
     --fonte-padrao: "Urbanist", sans-serif;
     --fonte-titulo: 2.3em;
     --fonte-subtitulo: 1.5rem;
     --fonte-materia: 1.2rem;
+    --fonte-menu-flutuante: 1.2vw;
     --fonte-menu: 1rem;
     --botao-largura: 5em;
     --botao-padding-vertical: 1.5rem;
@@ -72,7 +73,7 @@ body {
     padding: 0;
     margin: 0.5em 0.8em;
     text-decoration: none;
-    font-size: var(--fonte-materia);
+    font-size: var(--fonte-menu-flutuante);
     color: var(--cor-texto-cabecalho);
     font-weight: 500;
     font-family: var(--fonte-padrao);
@@ -95,6 +96,7 @@ body {
     font-family: var(--fonte-marca);
     font-weight: 600;
     color: var(--cor-texto-cabecalho);
+    font-size: 1.2vw;
 }
 
 .botao__login:hover {
@@ -234,7 +236,7 @@ ul li {
     .cabecalho__menu__flutuante__links {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 2em;
+        margin: 2em 3em 0 3em;
     }
 
     .menu__flutuante__links__links{
@@ -243,13 +245,25 @@ ul li {
     }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1000px) {
     .cabecalho__marca__nome {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
+    .botao__login a {
+        font-size: 0.8em;
+        display: flex;
+        justify-content: center;
+
+    }
+    
     .cabecalho__marca a {
         gap: 0;
+    }
+
+    .cabecalho__marca__nome {
+        padding: 0 0.5em;
+        margin: 0;
     }
 
     .cabecalho {

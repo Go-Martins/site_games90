@@ -9,11 +9,11 @@
     --cor-texto-hover: #151515;
 
     --fonte-marca: "Cinzel Decorative", serif;
-    --fonte-marca-tamanho: 2.5rem;
+    --fonte-marca-tamanho: 2.5vw;
     --fonte-padrao: "Urbanist", sans-serif;
     --fonte-titulo: 2.3rem;
     --fonte-subtitulo: 1.5rem;
-    --fonte-materia: 1.2rem;
+    --fonte-materia: 1.2vw;
     --fonte-menu: 1rem;
     --botao-largura: 4.8em;
     --botao-padding-vertical: 1.3em;
@@ -211,7 +211,7 @@ input{
     .cabecalho__menu__flutuante__links {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 2em;
+        margin: 2em 2em 0 2em;
     }
 
     .menu__flutuante__links__links{
