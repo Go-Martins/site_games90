@@ -14,6 +14,7 @@
     --fonte-titulo: 1.5em;
     --fonte-subtitulo: 1.5rem;
     --fonte-materia: 1.2vw;
+    --fonte-rodape-tamanho: 1.2rem;
     --fonte-menu: 1rem;
     --botao-largura: 4.8em;
     --botao-padding-vertical: 1.3em;
@@ -200,7 +201,7 @@ input{
     padding: var(--padding-rodape);
     font-family: var(--fonte-padrao);
     align-items: center;
-    font-size: var(--fonte-materia);
+    font-size: var(--fonte-rodape-tamanho);
     flex-direction: row;
     text-align: center;
     color: #ACA9BB;
